@@ -27,11 +27,11 @@ jobs:
       - name: Generate QR Code
         run: |
           python QR.py "Hello, QR Code!"
-          mv qrcode.png $HOME/Desktop/qrcode.png  # Move the generated QR code to the desktop
+          mv qrcode.png C:\Users\Praneel\Desktop\qrcode.png  # Move the generated QR code to the desktop
         working-directory: ${{ github.workspace }}
 
       - name: Upload QR Code
         uses: actions/upload-artifact@v2
         with:
           name: QR Code
-          path: $HOME/Desktop/qrcode.png
+          path: C:\Users\Praneel\Desktop\qrcode.png
