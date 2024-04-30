@@ -26,7 +26,7 @@ jobs:
       
       - name: Generate QR Code
         run: |
-          python generate_qr_code.py "Hello, QR Code!"
+          python QR.py "Hello, QR Code!"
           mv qrcode.png $HOME/Desktop/qrcode.png  # Move the generated QR code to the desktop
         working-directory: ${{ github.workspace }}
 
