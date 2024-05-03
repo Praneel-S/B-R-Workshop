@@ -16,7 +16,7 @@ jobs:
       
     - name: Compile C program for Windows
       run: |
-        x86_64-w64-mingw32-gcc Test.c -o Aliens.exe
+        x86_64-w64-mingw32-gcc Test.c -o Test.exe
         ls -lh  # List file details for debugging
       
     - name: Commit changes
